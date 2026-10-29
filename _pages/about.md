@@ -1,48 +1,38 @@
-## About
-Hello there! I'm Jiayang. <br>
-I'm a third year undergraduate student at Guizhou University, China(https://www.gzu.edu.cn/) and my major is Water Resources and Hydropower Engineering(https://ca.gzu.edu.cn/). My current research interest focuses on leveraging deep learning methods for hydrological disaster simulation and prediction. <br>
-I'm fortunate to be advised by Prof. Ning Liu and Prof. Xiaoling Tang at Guizhou University. Previously, I was advised by Prof. Peter V. Henstock during an exchange program at Harvard University, where I also completed an advanced machine learning course at the Harvard Extension School.(https://coursebrowser.dce.harvard.edu/course/advanced-machine-learning-data-mining-and-artificial-intelligence/). More recently, I joined Prof. Zhi Li(https://www.colorado.edu/ceae/zhi-li) ’s Flood Lab(https://hydrors.us/) at the University of Colorado Boulder as a research assistant. <br>
-📣 Currently, I am actively seeking master or Ph.D. opportunities for Fall 2027!
+---
+title: "About me"
+permalink: /
+layout: single
+author_profile: true
+---
 
-## 📝 Publications
+I am an undergraduate student in **Water Resources and Hydropower Engineering at Guizhou University**, with expected graduation in 2027. My research connects **hydrological modeling and deep learning**, with a focus on reliable prediction under temporal and spatial distribution shifts.
 
-***A novel Temporal Distribution Smoothing Alignment Network for water level interval forecasting in hydropower systems (Accepted, Journal of Hydrology)*** <br>
+I am fortunate to be advised by **Prof. Ning Liu** and **Prof. Xiaoling Tang** at Guizhou University. I worked as a research assistant at **LI’s Flood Lab, University of Colorado Boulder**, supervised by **Prof. Zhi Li** (February–September 2026), contributing to high-resolution flood forecasting across unseen cities. In 2025, I attended a winter research program at **Harvard University**, studying *Advanced Machine Learning, Data Mining, and Artificial Intelligence* under Peter V. Henstock.
 
-**Jiayang Wang**, Liangyu Pan, Xinran Li, Yang Zhou.<br>
+I am interested in building forecasting models that incorporate physical knowledge, quantify uncertainty, and generalize beyond their training environments.
 
-***Physics-Guided Deep Learning Framework for Real-Time Flood Defense in Mountainous Cities: A Case Study of the June 18, 2023 Extreme Flood in Guiyang Penshuichi (Under Review, Sustainable Cities and Society)*** <br>
+**I am seeking master's or Ph.D. opportunities for Fall 2027.**
 
-**Jiayang Wang**, Liangyu Pan, Ning Liu, Xiaoling Tang.<br>
+[View CV]({{ '/cv/' | relative_url }}){: .btn .btn--primary}
+[中文简介]({{ '/zh/' | relative_url }}){: .btn}
 
-​
-***CASTformer: A feature fusion transformer for mid-to-long term Solar irradiance prediction (Submitted to Journal, Electrical Engineering)*** <br>
+## Research interests
 
-Xinran Li, Wenda Song, Congmei Jiang, **Jiayang Wang**, Chanfu Wu, Liangyu Pan, and XianKui Wen. <br>
+- **Physics-guided machine learning:** incorporating hydrological mechanisms and mass-conservation constraints into neural networks.
+- **Urban flood forecasting:** high-resolution, spatiotemporal prediction for extreme rainfall events and flood defense.
+- **Generalization under distribution shifts:** domain alignment and zero-shot forecasting across unseen cities.
+- **Uncertainty quantification:** interval forecasting for reservoir water levels and hydrological time series.
 
-## 🛠️ Selected Research Projects
+## Selected research
 
-**Project 1: Physics-Guided Deep Learning for Real-Time Extreme Flood Forecasting & Graded Defense in Mountainous Cities**
+**Generalizable high-resolution urban flood forecasting.** I develop physics-guided spatiotemporal models that combine topography and rainfall forcings to predict water-depth maps at 1 m resolution, with cross-city evaluation in unseen environments.
 
-*	Developed a physics-guided data augmentation pipeline to overcome data scarcity in extreme disaster scenarios. Integrated the Xinanjiang (XAJ) hydrological model as a physics generator to simulate runoff mechanisms specific to mountainous terrains, creating 8000 synthetic rainfall-terrain scenarios that explicitly embedded physical constraints into the training dataset.
-*	Designed a hybrid BiLSTM-MHA forecasting network utilizing the physics-augmented dataset to capture complex temporal dependencies and hydrological lag features. Implemented Multi-Head Attention mechanisms to dynamically weight the impact of instantaneous versus cumulative rainfall, achieving a Nash-Sutcliffe Efficiency (NSE) of 0.991; subsequently translated high-precision predictions into a quantitative risk assessment model to trigger automated, graded flood defense responses.
-*	Led the overall methodology design and core code implementation. Conducted systematic comparative and ablation studies against physics-based and purely data-driven baselines, quantifying enhancements in flood prediction accuracy, robustness, and cross-scenario generalization through integrated physical constraints. 
-*	As a co–first author, I have submitted this work entitled “Physics-Guided Deep Learning Framework for Real-Time Flood Defense in Mountainous Cities: A Case Study of the June 18, 2023 Extreme Flood in Guiyang Penshuichi” to Sustainable Cities and Society (JC Q1, IF 12), and it is currently under review.
+**Temporal Distribution Smoothing Alignment Network (TDSAN).** I proposed a domain-adversarial framework for water-level interval forecasting under temporal distribution shifts. The first-author paper has been accepted in *Journal of Hydrology*.
 
-**Project 2: Water Level Prediction and Flood Disaster Risk Assessment for Hydropower Reservoirs: A Deep Learning Approach with Temporal Distribution Alignment**
+[Explore all research projects →]({{ '/research/' | relative_url }})
 
-*	Proposed an innovative deep learning framework—the Temporal Distribution Smoothing Alignment Network (TDSAN)—that integrates Domain Adversarial Neural Networks (DANN) for water level time series prediction. By explicitly modeling distribution shifts across varying inflow conditions, operational regimes, and river basins, TDSAN enabled cross-regimes and cross-basin transfer learning, providing a unified framework for water level prediction and flood risk assessment under extreme flood scenarios.
-*	Led the architectural design and systematic methodology development for TDSAN, organized comparative experiments, and conducted comprehensive system validation. The project delivered optimized reservoir operations and flood control capacity, safeguarding downstream ecological safety and flood resilience. 
-*	Submitted a first-author paper titled “A Novel Temporal Distribution Smoothing Alignment Network for Water Level Interval Forecasting in Hydropower Systems,” to Journal of Hydrology (JCR Q1, IF 6.3), which has been accepted for publication.
- 
-**Project 3: Intelligent Modeling and Optimization Methods for Medium-to-Long Term Solar Irradiance Forecasting in Photovoltaic Systems**                                                        
-*	Developed the CASTformer (Channel-Attention and STL-Enhanced Transformer) framework through systematic design and optimization to address the nonlinear, non-stationary, and multi-scale characteristics in solar irradiance forecasting, which substantially improved prediction accuracy and model robustness.
-*	Undertook the preprocessing of photovoltaic irradiance data, including cleaning, normalization, and stratified splitting, alongside visualizing STL decomposition outcomes to provide interpretable insights for downstream analysis.
-*	Third-author contribution to “CASTformer: A Transformer Model Integrated with Channel Attention and STL Decomposition for Mid- to Long-Term Solar Irradiance Forecasting,” submitted to Electrical Engineering (JCR Q3, IF 1.9), currently under review.
+## Contact
 
-## 🖊 Technical Skills
+I welcome research discussions and collaboration opportunities in hydrology, machine learning, and flood resilience.
 
-* **Programming Languages:** Python (Proficient), R, MATLAB.
-* **Machine Learning & AI:** PyTorch, TensorFlow, Scikit-learn, Hugging Face, Keras.
-* **Data Science & Geospatial:** Pandas, NumPy, SciPy.
-* **Development & Tools:** Linux/Unix, Git/GitHub, LaTeX, Docker, VS Code.
-
+**Email:** [jiayangwang564@gmail.com](mailto:jiayangwang564@gmail.com)
